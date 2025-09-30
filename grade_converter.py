@@ -1,36 +1,35 @@
 # FILE NAME - grade_converter.py
 
-# NAME: 
-# DATE: 
-# BRIEF DESCRIPTION:  
-
-
-
-# 1. Make sure you fill out the comments above
-# 2. Write your code in the proper spot
-# 3. Be sure to answer the Reflection Questions and Attestation below
-# 4. The Sample Output has been included in this code for your convenience
-
-
+# NAME: Michael Glazier
+# DATE: 09/30/2025
+# BRIEF DESCRIPTION:  return Letter Grade for a numerical grade
 
 ########## ENTER YER CODE BELOW THIS LINE ##########
 
-print('===== Grade Converter =====')
+def main():
 
-percent = int(input('Enter a numerical grade (1-100): '))
+   print("===== Grade Converter =====")
+   numerical_grade = int(input("Enter a numerical grade (1-100): "))
 
-if percent > 100:
-    print('A+')
-elif percent >= 90:
-    print('A')
-elif percent >= 80:
-    print('B')
-elif percent >= 70:
-    print('C')
-elif percent >= 65:
-    print('D')
-else:
-    print('F')
+   if numerical_grade > 100:
+      print("A+")
+   
+   elif 90 <= numerical_grade <= 100:
+      print("A")
+
+   elif 80 <= numerical_grade < 90:
+      print("B")
+   
+   elif 70 <= numerical_grade < 80:
+      print("C")
+
+   elif 65 <= numerical_grade < 70:
+      print("D")
+
+   else:
+      print("F")
+
+main()
 
 ########### END YER CODE ABOVE THIS LINE ###########
 
@@ -85,10 +84,6 @@ D
 1. What is something you would tell a future student to be careful about when
    doing this lab?
 
-
-
-
-
-
+I'd tell them to look out for the start and end of ranges to make sure correct letter is being included when on a boundary
 
 '''
